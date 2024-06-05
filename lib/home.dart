@@ -1,3 +1,4 @@
+import 'package:bubbletrouble/button.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -21,10 +22,16 @@ class _HomeState extends State<Home> {
             child: Container(
           color: Colors.grey,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    
-                  )
+                  MyButton(
+                    Icons.arrow_back
+                  ),
+                  MyButton(
+                      Icons.arrow_upward
+                  ),
+                  MyButton( Icons.arrow_forward),
+
                 ],
               ),
         ))
